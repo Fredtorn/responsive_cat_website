@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+
+nav {
+    display: none;
+}
+
+.buttonCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+.catGrid {
+    display: flex;
+    flex-direction: column;
+}
+
+.catGrid img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.section {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.section1 h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width:1024px) {
+
+    header {
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 10px 0 10px 40px;
+    }
+
+    nav {
+        display: flex;
+        text-align: center;
+
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        border-bottom: transparent solid 4px;
+    }
+
+    a:hover {
+        border-bottom: white solid 4px;
+
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paw {
+        width: 80px;
+        position: absolute;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .section {
+        padding: 40px;
+        background-color: #f1f1f1;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section img {
+        width: auto;
+    }
+
+
+    .section1 img {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .buttonCenter {
+        display: flex;
+        justify-content: left;
+    }
+
+    .section1 h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .catGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .catGrid img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* ANIMATIONS */
+
+.paw1 {
+    animation: paw 25s infinite;
+    left: -40px;
+    top: 570px;
+    transform: rotate(40deg);
+    opacity: 0%;
+}
+
+.paw2 {
+    animation: paw 25s 2s infinite;
+    left: 110px;
+    top: 430px;
+    transform: rotate(40deg);
+    opacity: 0%;
+}
+
+.paw3 {
+    animation: paw 25s 3.5s infinite;
+    left: 50px;
+    top: 250px;
+    transform: rotate(30deg);
+    opacity: 0%;
+}
+
+.paw4 {
+    animation: paw 25s 5s infinite;
+    left: 200px;
+    top: 180px;
+    transform: rotate(35deg);
+    opacity: 0%;
+}
+
+.paw5 {
+    animation: paw 25s 6.5s infinite;
+    left: 220px;
+    top: 40px;
+    transform: rotate(65deg);
+    opacity: 0%;
+}
+
+.paw6 {
+    animation: paw 25s 8s infinite;
+    left: 400px;
+    top: 120px;
+    transform: rotate(75deg);
+    opacity: 0%;
+}
+
+.paw7 {
+    animation: paw 25s 9.5s infinite;
+    left: 550px;
+    top: 20px;
+    transform: rotate(85deg);
+    opacity: 0%;
+}
+
+.paw8 {
+    animation: paw 25s 11s infinite;
+    left: 690px;
+    top: 110px;
+    transform: rotate(100deg);
+    opacity: 0%;
+}
+
+.paw9 {
+    animation: paw 25s 12.5s infinite;
+    left: 860px;
+    top: 60px;
+    transform: rotate(120deg);
+    opacity: 0%;
+}
+
+.paw10 {
+    animation: paw 25s 14s infinite;
+    left: 960px;
+    top: 200px;
+    transform: rotate(120deg);
+    opacity: 0%;
+}
+
+.paw11 {
+    animation: paw 25s 15.5s infinite;
+    left: 1100px;
+    top: 95px;
+    transform: rotate(95deg);
+    opacity: 0%;
+}
+
+.paw12 {
+    animation: paw 25s 17s infinite;
+    left: 1220px;
+    top: 200px;
+    transform: rotate(95deg);
+    opacity: 0%;
+}
+
+@keyframes paw {
+    0% {
+        opacity: 0%;
+    }
+
+    19% {
+        opacity: 100%;
+    }
+
+    21% {
+        opacity: 100%;
+    }
+
+    24% {
+        opacity: 0%;
+    }
+}
