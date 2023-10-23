@@ -35,6 +35,14 @@ nav {
     margin: 40px;
 }
 
+.paw {
+    display: none;
+}
+
+.heart {
+    display: none;
+}
+
 img {
     width: 100%;
 }
@@ -115,6 +123,15 @@ footer {
         justify-content: center;
     }
 
+    .button:hover {
+        background-color: #c091b0;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 40px;
+    }
+
     .paw {
         width: 80px;
         position: absolute;
@@ -159,6 +176,7 @@ footer {
     .section1 h2 {
         font-size: 2.5rem;
         text-align: left;
+
     }
 
     .catGrid {
@@ -175,6 +193,9 @@ footer {
 }
 
 /* ANIMATIONS */
+.paw {
+    display: inline;
+}
 
 .paw1 {
     animation: paw 25s infinite;
@@ -287,5 +308,48 @@ footer {
 
     24% {
         opacity: 0%;
+    }
+}
+
+.heart {
+    display: inline;
+    width: 80px;
+    position: absolute;
+    left: 390px;
+    top: 660px;
+    animation: heart 1.4s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.5);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.5);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+.title_animation {
+    animation: title_animation 4s infinite;
+}
+
+@keyframes title_animation {
+    0% {}
+
+    50% {
+        color: #c091b0;
     }
 }
